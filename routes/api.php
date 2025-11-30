@@ -33,7 +33,7 @@ Route::middleware('auth:sanctum')->group(function () {
      * =========5===========
      * Return or borrow books
      */
-    Route::put('books/{id}/borrow-return', [BooksController::class, 'borrowReturn']);
+    Route::put('/books/{id}/borrow-return', [BooksController::class, 'borrowReturn']);
 });
 
 
